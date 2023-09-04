@@ -1,11 +1,15 @@
-<<<<<<< HEAD
-body{
-    color: black;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+@font-face {
+  font-family: "pixel";
+  src: url(pixel.ttf);
 }
-=======
+
 body{
-  color: black;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: #b095c2;
+  font-family: pixel;
+  margin: 100px;
 }
->>>>>>> refs/remotes/origin/main
+
+h1{
+  color: #e8fffc;
+  font-size: 80px;
+}
