@@ -1,54 +1,36 @@
+
 @font-face {
-  font-family: "moto";
-  src: url(motofont.ttf);
+  font-family: geneva;
+  src: url(Geneva.ttf);
 }
 
-body{
-  background-color: #b095c2;
-  font-family: moto;
-  margin: 100px;
+@font-face {
+  font-family: inaimathi;
+  src: url(InaiMathi.ttf);
 }
 
-h1{
-  color: #e8fffc;
-  font-size: 80px;
-  font-style: oblique;  
-}
-
-h2{
-  color: #5a1fad;
-  font-size: 40px;
-  font-style: oblique;
+h1, h2{
+  font-family: inaimathi;
+  font-weight: 20;
 }
 
 .navbar{
   display: flex;
   justify-content: space-evenly;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 50px;
 }
 
 button{
-  color:#e8fffc;
-  background-color: #5a1fad;
-  font-size: 40px;
-  font-family: moto;
-  margin-top: 40px;
-  margin-right: 50px;
-  width: 250px;
-  height: 100px;
+  font-family: geneva;
+  height: 40vh;
+  width: 30vw;
+  margin: 20px;
 }
 
-img{
-  width: 70vw;
+@media (max-width:900px) {
+  .navbar{
+    flex-direction: column;
+  }
+  button{
+    width: 80vw;
+  }
 }
-
-.gallery{
-  display: flex;
-  width: 100vw;
-  margin: 60px;
-  flex-direction: column;
-  justify-content: center;
-}
-
