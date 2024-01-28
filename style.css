@@ -4,14 +4,22 @@
   src: url(Geneva.ttf);
 }
 
-@font-face {
-  font-family: inaimathi;
-  src: url(InaiMathi.ttf);
+body{
+  font-family: geneva;
+  background-color: #e0e0e0;
 }
 
 h1, h2{
-  font-family: inaimathi;
   font-weight: 20;
+}
+
+h2{
+  margin-left: 35px;
+  margin-top: -5px;
+}
+
+.name{
+  display: flex;
 }
 
 .navbar{
@@ -21,14 +29,56 @@ h1, h2{
 
 button{
   font-family: geneva;
-  height: 40vh;
-  width: 30vw;
+  font-size: 30px;
+  border-color: #0a1a0c;
+  height: 60vh;
+  width: 40vw;
   margin: 20px;
 }
 
-@media (max-width:900px) {
+.workbutton{
+  background-image: url(IMG_1071_2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: -60px;
+  opacity: 0.5;
+}
+
+.aboutbutton{
+  background-image: url(IMG_1102_2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: -100px;
+  opacity: 0.5;
+}
+
+.aboutbutton:hover, .workbutton:hover{
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+footer{
+  background-color: #3eb04d;
+  display: flex;
+  justify-content: space-between;
+  margin: 10vh 0 0 0;
+  height: 20vh;
+  width: 99vw;
+}
+
+.info{
+  margin: 30px 0 0 30px;
+}
+
+.socials{
+  margin: 30px 30px 0 0;
+
+}
+
+@media (max-width:1200px) {
   .navbar{
     flex-direction: column;
+    align-items: center;
   }
   button{
     width: 80vw;
